@@ -39,7 +39,7 @@
     color: grey;
 }
 
-#resume .resume-content {
+/* #resume .resume-content {
     float: left;
 }
 
@@ -51,7 +51,6 @@
     border-left: solid rgba(100,100,100,.6) 1.1px;
     margin-left: 50px;
     padding-left: 10px;
-    /*display: inline;*/
     float: left;
 }
 
@@ -83,7 +82,7 @@
 
 #resume #experience {
     width: 10px;
-}
+} */
 
 #resume-btn {
     margin-left: 50px;

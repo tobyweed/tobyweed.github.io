@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/about.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/contact.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/essays.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/essays.css"> -->
     <link rel="stylesheet" type="text/css" href="/stylesheets/projects.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/resume.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/stylesheets/resume.css"> -->
     <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/avenir"></link>
@@ -51,7 +51,7 @@
                     navItems = $(".navbar").find("a"),
                     navHead = $("#switch").offset().top,
                     about = $("#about").offset().top,
-                    resume = $("#resume").offset().top,
+                    // resume = $("#resume").offset().top,
                     projects = $("#projects").offset().top,
                     contact = $("#contact").offset().top;
                     
@@ -75,10 +75,10 @@
                 if(fromTop >= about) { 
                     if(fromTop >= about-100 && fromTop < projects-100) {
                         $('a[href="#about"]').addClass("active");
-                    } else if (fromTop >= projects-100 && fromTop < resume-100) {
+                    } else if (fromTop >= projects-100 && fromTop < contact-300) {
                         $('a[href="#projects"]').addClass("active");
-                    } else if (fromTop >= resume-100 && fromTop < contact-300) {
-                        $('a[href="#resume"]').addClass("active");
+                    // } else if (fromTop >= resume-100 && fromTop < contact-300) {
+                    //     $('a[href="#resume"]').addClass("active");
                     } else if (fromTop >= contact-300) {
                         $('a[href="#contact"]').addClass("active");
                     }

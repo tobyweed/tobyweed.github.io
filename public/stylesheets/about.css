@@ -85,6 +85,14 @@
 	display: inline-block;
 }
 
+#about #troll-link {
+	color: rgb(150, 150, 150);
+}
+
+#about #bio-text {
+	display: none;
+}
+
 #about #bio-text {
 	display: none;
 }
