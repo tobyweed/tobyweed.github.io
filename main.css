@@ -1,0 +1,658 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+
+body ul {
+	list-style: none;
+}
+
+body h1 {
+	font-weight: 200;
+}
+
+body p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+body h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+body h5 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+.background-image {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-colored {
+	background-attachment: fixed;
+	background-color: #222;
+}
+
+.layer {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+.resp-layer {
+	height: 100%;
+}
+
+.button {
+	width: 130px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid black 1px;
+	color: black;
+	border-radius: 0;
+	padding-top: 9px;
+	margin: 10px;
+
+	-webkit-transition: background-color 0.4s;
+	transition: background-color 0.4s;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.button:focus {
+	color: black;
+}
+
+h1 {
+	margin-top: 0;
+}
+/*======================================================== LANDING ========================================================*/
+
+#landing {
+	height: 100%;
+	top: 0;
+	background-image: url('./pics/mtn1.JPG');
+	background-position: 50% 10%;
+	text-align: center;
+	color: black;
+}
+
+#landing .content {
+	height: 100vh;
+	position: relative;
+}
+
+#landing .content #top-landing {
+	height: 40%;
+}
+
+#landing .content #mid-landing {
+	height: 45%;
+	text-align: center;
+}
+
+#landing .content .logo-background {
+	display: inline-block;
+	width: 420px;
+	height: 115px;
+}
+
+#landing .content .logo {
+	width: 420px;
+	height: 115px;
+	overflow: hidden;
+
+	color: white;
+	font-size: 1em;
+
+	display: inline-block;
+	padding: 10px 0 10px;
+	margin: 0 auto;
+}
+
+#landing .content .logo h1 {
+	border: solid 2px white;
+	height: 75px;
+	padding: 5px 10px 5px 10px;
+}
+
+#landing .content h1 {
+	/*padding-top: 250px;*/
+	font-size: 3.9em;
+	margin: 0 20px 0 20px;
+	font-weight: 200;
+	text-align: justify;
+	height: 80px;
+}
+
+#landing .content .logo h1:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+#landing .content .logo p {
+	margin: 0 20px 0 20px;
+	width: 90%;
+	text-align: justify;
+	/*font-weight: 400;*/
+}
+
+#landing .content .logo p:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+#landing .circular:hover {
+	background-color: white;
+	color: rgba(0, 0, 0, 0);
+}
+
+#landing .circular:link,
+.circular:visited {
+	position: relative;
+	bottom: 0;
+
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	padding-top: 13.5px;
+	font-size: 1.3em;
+	margin: 0 auto;
+
+	color: white;
+	border: solid white 1px;
+}
+
+/*============================================== THUMBNAIL GALLERIES =================================================*/
+
+.thumbnail {
+	padding: 0;
+	border: solid white 1px;
+	height: 0;
+	padding-bottom: 100%;
+	background-size: cover;
+	border-radius: 0;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.row {
+	margin: 0 auto;
+	width: 96vw;
+}
+
+.thumb-layer {
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	text-align: center;
+
+	color: white;
+	opacity: 0;
+	line-height: 1.5;
+
+	-webkit-transition: background-color 0.45s ease-out, opacity 0.45s ease-out,
+		line-height 0.45s ease-out;
+	transition: background-color 0.45s ease-out, opacity 0.45s ease-out,
+		line-height 0.45s ease-out;
+}
+
+.thumb-layer:hover {
+	background-color: rgba(0, 0, 0, 0.45);
+	opacity: 1;
+	line-height: 0.15;
+}
+
+.thumb-link {
+	margin-top: 25px;
+}
+
+.thumb-text {
+	margin-top: 25%;
+	font-size: 0.85em;
+}
+
+/*============================================== SUBS & DIVIDERS ====================================================*/
+
+.sub {
+	color: black;
+	font-weight: 200;
+	text-align: center;
+	/*margin-top: 70px;*/
+}
+
+.sub h1 {
+	padding-top: 35px;
+}
+
+.divider {
+	height: 200px;
+	background-image: url('./pics/car.JPG');
+	background-position: 50% 74%;
+}
+
+/*======================================================== ABOUT ========================================================*/
+
+#about {
+	text-align: center;
+	color: black;
+	background-color: rgba(246, 246, 246, 1);
+	padding-bottom: 63px;
+	padding-top: 90px;
+}
+
+#about .content {
+	margin: 0 40px 0 40px;
+}
+
+/*ID BOX*/
+
+.id-box {
+	float: left;
+	width: 210px;
+	margin-right: 20px;
+}
+
+#portrait {
+	border-radius: 50%;
+	border: solid black 1px;
+	height: 170px;
+	width: 170px;
+	background-clip: padding-box;
+	background-size: 100%;
+	background-position: 50% 80%;
+
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#about hr {
+	border: solid black 0.7px;
+}
+
+#about h1 {
+	/*font-weight: 400;*/
+	font-size: 2.9em;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#about h4 {
+	text-align: left;
+	margin-bottom: 65px;
+	font-size: 2em;
+	max-width: 100%;
+	margin: 0 auto;
+
+	line-height: 1.6;
+}
+
+#about h5 {
+	text-align: left;
+	font-size: 1.3em;
+	font-weight: 300;
+	color: black;
+}
+
+#about h6 {
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#about p {
+	text-align: left;
+	padding: 0px;
+	margin: 0;
+
+	font-size: 1.1em;
+}
+
+#about .id-box {
+	border-right: solid black 1px;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#about .about-content {
+	margin-top: 30px;
+	display: inline-block;
+}
+
+#about #troll-link {
+	color: rgb(150, 150, 150);
+}
+
+#about #bio-text {
+	display: none;
+}
+
+#about #bio-text {
+	display: none;
+}
+
+#about #coding-text {
+	display: none;
+	font-size: 0.9em;
+}
+
+#about #values-text b {
+	font-weight: 300;
+	color: rgb(150, 150, 150);
+}
+
+#about .active {
+	color: white;
+	background-color: black;
+}
+
+
+/*======================================================== CONTACT ========================================================*/
+
+.copyright {
+    text-align: center;
+    color: rgba(210,210,210,.87);
+    margin-top: 80px;
+}
+
+#contact .container {
+    padding-top: 100px;
+}
+
+#contact hr {
+    margin-top: 0;
+}
+
+a {
+    color: rgba(210,210,210,.8);
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    transition: color .4s;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+    color: rgba(210,210,210,.8);
+    font-size: 2em;
+}
+
+.contact-icons{
+    margin-top: 80px;
+}
+
+.fa {
+    margin: 0 10px 0 10px;
+}
+
+
+
+
+/*======================================================== NAVBAR ========================================================*/
+
+.navbar {
+    -webkit-transition: background-color .5s, font-size .5s; /* Safari */
+    transition: background-color .5s, font-size .5s;
+
+    z-index: 1000;
+
+    text-align: center;
+    width: 100%;
+}
+
+#spacer {
+    border: none;
+    margin: 0;
+    padding-top: .1vh;
+}
+
+#switch {
+    border: none;
+    margin: 0;
+}
+
+.navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  background-color: rgba(15,15,15,.92);
+}
+
+.navbar-bottom {
+    position: fixed;
+     top: 0;
+}
+
+.navbar-bottom #nav-list .nav-item a:hover {
+     color: rgb(0,0,0);
+     font-weight: 400;
+}
+
+#nav-list {
+    padding: 39px 0 30px 0;
+}
+
+#nav-list li{
+    display:inline-block;
+}
+
+#nav-head {
+    margin-left: 60px;
+    margin-right:60px;
+    font-size: 1.15em;
+}
+
+#nav-head a {
+    padding: 2px 6px 2px 6px;
+    border: .2px solid white;
+}
+
+.nav-item {
+    margin: 0 20px 0 20px;
+}
+
+#nav-list li a {
+     color: white;
+     -webkit-transition: color .25s; /* Safari */
+    transition: color .25s;
+}
+
+#nav-list .nav-item a:hover {
+     text-decoration:none;
+     color: gray;
+}
+
+#nav-list li a:visited {
+     text-decoration:none;
+}
+
+#nav-list li a:active {
+     text-decoration:none;
+}
+
+#nav-list li a:link {
+     text-decoration:none;
+}
+
+#nav-list .active {
+    color: grey !important;
+}
+
+/*DROPDOWN*/
+#nav-list .dropdown {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+
+/*============================================== projects ==================================================*/
+
+#projects {
+    background-color: rgba(50,50,50,1);
+    text-align: left;
+    padding-top:80px;
+    padding-bottom:50px;
+}
+
+#projects h1 {
+    font-size: 2.8em;
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#projects hr {
+    width: 76vw;
+    margin-left:0;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border: solid white .56px;
+}
+
+#projects .content h5 {
+    font-size: 1.2em;
+}
+
+#projects a:visited {
+    color: inherit;
+}
+
+
+#projects .button {
+    border: solid white 1px;
+    color: white;
+}
+
+#projects .button:hover {
+    background-color: white;
+    color: black;
+}
+
+#projects .button:focus {
+    color: white;
+}
+
+
+
+
+/*============================================== RESUME =================================================*/
+
+#resume {
+    display:table;
+    background-color: rgba(190,190,190,1);
+    text-align: left;
+    padding-top:80px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px white;
+}
+
+#resume h1{
+    font-size: 2.8em;
+    text-align: left;
+    margin-left: 20px;
+    float: left;
+}
+
+#resume hr {
+    width: 76vw;
+    margin-left:0;
+    border: solid rgba(100,100,100,.6) .7px;
+}
+
+#resume ul {
+    padding:0;
+    margin:0;
+}
+
+#resume b {
+    color: grey;
+}
+
+#resume strong {
+    color: black;
+}
+
+#resume span {
+    color: grey;
+}
+
+/* #resume .resume-content {
+    float: left;
+}
+
+#resume div {
+    float: left;
+}
+
+#resume .section {
+    border-left: solid rgba(100,100,100,.6) 1.1px;
+    margin-left: 50px;
+    padding-left: 10px;
+    float: left;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left bottom;
+	width: 95%;
+	color: black;
+
+	font-family: "avenir", sans-serif;
+}
+
+#resume .skills {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#resume .education {
+    display: table;
+}
+
+#resume #skills {
+    width: 10px;
+}
+
+#resume #education {
+    width: 10px;
+}
+
+#resume #experience {
+    width: 10px;
+} */
+
+#resume-btn {
+    margin-left: 50px;
+    margin-top: 36.5px;
+    background-color: rgba(245,245,245,.4);
+}
+
+#resume-btn:hover {
+    background-color: black;
+    color:white;
+}
