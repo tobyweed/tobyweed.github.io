@@ -2,19 +2,14 @@
 <html>
 <head>
 	<title>Toby Weed</title>
-	<meta name="description" content="Personal Wesbite by Trowbridge (Toby) Weed.">
+	<meta name="description" content="Personal Website by Toby Weed.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="about.css">
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <link rel="stylesheet" type="text/css" href="projects.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/navbar.css"> -->
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/avenir"></link>
-
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Source+Sans+Pro:200,300,400" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -49,7 +44,6 @@
                     navItems = $(".navbar").find("a"),
                     navHead = $("#switch").offset().top,
                     about = $("#about").offset().top,
-                    // resume = $("#resume").offset().top,
                     projects = $("#projects").offset().top,
                     contact = $("#contact").offset().top;
 
@@ -98,14 +92,6 @@
                 $(".about-btn").removeClass("active");
                 $(this).addClass("active");
             });
-
-            // $("#coding").click(function(){
-            //     $(".about-text").fadeOut(100)
-            //     $("#coding-text").fadeIn(500);
-
-            //     $(".about-btn").removeClass("active");
-            //     $(this).addClass("active");
-            // });
 
         }
 
@@ -159,7 +145,7 @@
 
           <div class="sub">
             <div id="about">
-                <h1>Hello, I'm Trowbridge.</h1>
+                <h1>Hello, I'm Toby.</h1>
                 <hr/>
                 <div class="about-content">
                     <div class="container">
@@ -169,34 +155,21 @@
                                 <div class="id-box">
                                     <div id="portrait" style="background-image:url(pics/headshot.png)"></div>
                                     <a id="intro" class="about-btn btn button active">Intro</a>
-                                    <!-- <a id="bio" class="about-btn btn button">Bio</a> -->
                                     <a id="bio" class="about-btn btn button">Bio</a>
                                     <a id="blog" class="about-btn btn button" href="https://nematobe.substack.com/" target="_blank">Blog</a>
-                                    <!--<a id="coding" class="about-btn btn button">Coding</a>-->
-                                    <!--<a id="values" class="about-btn btn button">Values</a>-->
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-sm-7">
                                 <div id="intro-text" class="about-text">
-                                    <h4>But I generally go by Toby for ease and steez.</h4>
-                                    <br/>
-                                    <br/>
                                     <h4> I made this site during my gap year before college in 2017. After a bit of a retirement,
                                       I'm bringing it back to showcase some of the side projects I've worked on over the last few years. </h4>
-                                    <br/>
-                                    <br/>
-                                    <h4> Why is the landing page of this site a huge mountain? Oh, I don't know.</h4>
                                 </div>
 
                                 <div id="bio-text" class="about-text">
-                                    <p><b>I grew up in rural Putney, Vermont.</b> I like skiing, observing insects and other wildlife, jumping into water, and board games. </p>
-                                    <br>
-
-                                    <p><b>I graduated from Middlebury College with a degree in math in May 2022.</b> I also took a lot of physics, CS, and history-ish classes, and was the president of the <a id = "troll-link" href="http://middpatrol.squarespace.com/">Middlebury Snow Bowl ski patrol</a>.</p>
-                                    <br>
-
-                                    <p>Since graduating, I’ve been trying to figure out what I’d like to do next and where. I'm currently working with <a id = "troll-link" href="https://www.fp21.org/">fp21</a> as a research intern.</p>
+                                    <p>I grew up in rural Putney, Vermont. I like skiing, observing insects and other wildlife, jumping into water, and board games. </p>
+                                    <p>I graduated from Middlebury College with a degree in math, focusing on the mathematical sciences, in May 2022. I also took a lot of physics, CS, and history-ish classes, and was the copresident of the <a id = "troll-link" href="http://middpatrol.squarespace.com/">Middlebury Snow Bowl ski patrol</a>.</p>
+                                    <p>I'm currently working as a researcher on a contract with <a id = "troll-link" href="https://www.fp21.org/">fp21</a>.</p>
                                     <br>
 
                                 </div>
@@ -213,7 +186,49 @@
                 <h1>PROJECTS |<a href="https://github.com/tobyweed" target="_blank"><span class="fa fa-github"></span></a></h1>
                 <hr/>
                 <div class="container">
+
+                    <!-- ================== ROW 1 ================== -->
                     <div class="row">
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="thumbnail" style="background-image:url(pics/lowy_pic.png)">
+                                <div class="thumb-layer">
+                                    <div class="thumb-text">
+                                        <h4>To Quantify or Not to Quantify?</h4>
+                                        <em>An Op-Ed About Measurement in Foreign Policy</em>
+                                    </div>
+                                    <br/>
+                                    <a class="thumb-link btn button" href="https://www.fp21.org/publications/foreign-policy-needs-measurement" target="_blank">View Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="thumbnail" style="background-image:url(pics/unlocking_reform.png)">
+                                <div class="thumb-layer">
+                                    <div class="thumb-text">
+                                        <h4>Unlocking Reform Recommendations</h4>
+                                        <em>A Semi-Automated Survey of Policy Reports</em>
+                                    </div>
+                                    <br/>
+                                    <a class="thumb-link btn button" href="https://www.fp21.org/publications/unlocking-foreign-policy-reform-recommendations" target="_blank">View Report</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                          <div class="thumbnail" style="background-image:url(pics/CI.png)">
+                              <div class="thumb-layer">
+                                  <div class="thumb-text">
+                                      <h4>To What Degree Can We Design Society?</h4>
+                                      <em>An Integrative Lit Review on Collective Intelligence</em>
+                                  </div>
+                                  <br/>
+                                  <a class="thumb-link btn button" href="https://medium.com/metagov/to-what-degree-can-we-design-society-931ef1f0195b" target="_blank">View Article</a>
+                              </div>
+                          </div>
+                        </div>
+
                         <div class="col-md-3 col-sm-6">
                           <div class="thumbnail" style="background-image:url(pics/covoting.png)">
                               <div class="thumb-layer">
@@ -227,6 +242,10 @@
                               </div>
                           </div>
                         </div>
+                    </div>
+
+                    <!-- ================== ROW 2 ================== -->
+                    <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail" style="background-image:url(pics/rkhs.png)">
                                 <div class="thumb-layer">
@@ -256,16 +275,14 @@
                                 <div class="thumb-layer">
                                     <div class="thumb-text">
                                         <h4>No 3 in a Line</h4>
-                                        <em>Finding New Placements for No3 Using SAT Solvers</em>
+                                        <em>Finding New No3 Placements Using SAT Solvers</em>
                                     </div>
                                     <br/>
                                     <a class="thumb-link btn button" href="https://github.com/tobyweed/no3" target="_blank">View GitHub</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail" style="background-image:url(pics/3dscan.png)">
                                 <div class="thumb-layer">
@@ -279,19 +296,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="thumbnail" style="background-image:url(pics/automaton.png)">
-                                <div class="thumb-layer">
-                                    <div class="thumb-text">
-                                        <h4>Totalistic Cellular Automata</h4>
-                                        <em>Chaotic System Simulation Applet</em>
-                                    </div>
-                                    <br/>
-                                    <a class="thumb-link btn button" href="https://totalistic-cellular-automata.herokuapp.com/Automata.html" target="_blank">View Site</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 
+                    <!-- ================== ROW 3 ================== -->
+                    <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="thumbnail" style="background-image:url(pics/site.png)">
                                 <div class="thumb-layer">
@@ -316,7 +324,7 @@
                     <div class="row">
                         <div class="col-md-6 contact">
                             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                            <p class="location">Currently roving.</p>
+                            <p class="location">Based in Boston.</p>
                         </div>
                         <div class="col-md-6 contact">
                             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
@@ -324,7 +332,7 @@
                         </div>
                     </div>
                     <div class="contact-icons contact">
-                            <a href="https://www.linkedin.com/in/trowbridge-weed-52b06614b/" target="_blank"><span class="fa fa-linkedin"></span></a>
+                            <a href="https://www.linkedin.com/in/toby-weed-52b06614b/" target="_blank"><span class="fa fa-linkedin"></span></a>
             <!--                 <a href="https://www.facebook.com/toby.weed" target="_blank"><span class="fa fa-facebook"></span></a> -->
                             <a href="https://github.com/tobyweed" target="_blank"><span class="fa fa-github"></span></a>
                             <a href="https://stackoverflow.com/users/8935712/toby-weed?tab=profile" target="_blank"><span class="fa fa-stack-overflow"></span></a>
